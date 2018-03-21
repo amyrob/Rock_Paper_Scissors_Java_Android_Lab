@@ -22,9 +22,6 @@ public class MainActivity extends AppCompatActivity {
         gameLogic = new GameLogic();
         outcomeTextView = findViewById(R.id.outcome_textview);
 
-
-
-
     }
 
     public void onButtonClicked(View button) {
