@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private GameLogic gameLogic;
     private Outcome playerOutcome, computerOutcome;
     private TextView outcomeTextView;
-
+    private TextView outcomeTextView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
         if (button.getId() == R.id.rock_button) {
             playerOutcome = Outcome.ROCK;
             outcomeTextView.setText(gameLogic.playRound(playerOutcome));
-            Outcome compChoice = gameLogic.getComputerChoice();
+
+
+
         }
         else if (button.getId() == R.id.paper_button) {
             playerOutcome = Outcome.PAPER;

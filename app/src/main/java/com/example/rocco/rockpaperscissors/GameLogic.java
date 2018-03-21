@@ -34,10 +34,10 @@ public class GameLogic {
 
 
         if(win.get(playerChoice)== computerChoice) {
-            return "Player wins";
+            return "Player wins...Computer chose " + computerChoice;
         }
         else if (win.get(computerChoice) == playerChoice){
-            return "Computer wins";
+            return "Computer wins...Player chose " + playerChoice;
         }
         else {
             return "Draw";
